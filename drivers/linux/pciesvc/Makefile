@@ -5,7 +5,7 @@ MODNAME = pciesvc
 
 obj-m := $(MODNAME).o
 
-$(shell echo '#define PCIESVC_VERSION "'`date`'"' >version.h)
+# $(shell echo '#define PCIESVC_VERSION "'`date`'"' >version.h)
 
 kpci :=
 
