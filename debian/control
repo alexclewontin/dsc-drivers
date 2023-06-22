@@ -1,0 +1,23 @@
+Source: pensando-dsc-drivers-dkms
+Section: kernel
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 12),
+ dkms,
+Standards-Version: 4.6.0
+Homepage: https://github.com/pensando/dsc-drivers
+Vcs-Browser: https://github.com/pensando/dsc-drivers/tree/master
+Vcs-Git: https://github.com/pensando/dsc-drivers.git
+
+Package: pensando-dsc-drivers-dkms
+Architecture: arm64
+Depends:
+ dkms,
+ ${misc:Depends},
+Provides: pensando-modules
+Description: Pensando's DSC drivers in DKMS format.
+ .
+ This package provides dsc-drivers modules built based on 
+ upstream master branch.

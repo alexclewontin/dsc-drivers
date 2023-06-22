@@ -1,0 +1,9 @@
+Test-Command: /usr/lib/dkms/dkms-autopkgtest
+Restrictions:
+ needs-root,
+ allow-stderr,
+Depends:
+ dkms,
+ gcc,
+ linux-headers-arm64 | linux-headers-generic | linux-headers,
+Features: test-name=dkms-autopkgtest
